@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Topo e Menu */
+
+.top-banner {
+    background-color: #161616;
+    color: #ffffff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.top-banner h5 {
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+header > .container {
+    padding-top: 40px;
+}
+
+.container h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 8px;
+}
+
+.burger-menu {
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-menu span {
+    height: 3px;
+    width: 100%;
+    background-color: #161616;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-menu li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.container-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #161616;
+}
+
+.container-menu li a:hover {
+    border-bottom: solid 1px #161616;
+    font-weight: bold;
+}
+
+/* Secoes e Listas */
+
+.section-descricao {
+    padding-bottom: 60px;
+}
+
+.container h2 {
+    padding-bottom: 8px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 5%;
+    align-content: stretch;
+}
+
+.lista-produtos li {
+    list-style: none;
+}
+
+.lista-produtos h3 {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.lista-produtos p {
+    padding-bottom: 12px;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.lista-produtos li img:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: solid 1px #161616;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ebebeb;
+}
+
+.lista-marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 2%;
+}
+
+.lista-marcas li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.lista-marcas h3 {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.lista-marcas p {
+    padding-bottom: 12px;
+}
+
+.lista-marcas li img {
+    max-width: 100%;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Sobre */
+
+.about {
+    display: block;
+}
+.about img {
+    max-width: 50%;
+}
+
+.about h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about p {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: normal;
+    column-gap: 2%;
+    margin-bottom: 60px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 640px) {
+
+    .top-banner {
+        padding: 5% 5%;
+    }
+
+    .container {
+        max-width: 85%;
+        padding-top: 40px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .container-menu {
+        display: none;
+        padding: 10%;
+    }
+
+    .container-menu li {
+        padding-bottom: 5px;
+    }
+
+    .lista-produtos {
+        display: block;
+    }
+
+    .lista-produtos li img {
+        margin-top: 40px;
+    }
+
+    .lista-marcas {
+        display: block;
+    }
+
+    .section-descricao {
+        padding-bottom: 20px;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .sobre-container {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .top-banner {
+        padding: 3% 3%;
+    }
+
+    .top-banner h5 {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding-top: 60px;
+    }
+
+    .container h2 {
+        font-size: 36px;
+    }
+
+    .container p {
+        font-size: 20px;
+    }
+
+    .container-menu li {
+        padding-bottom: 5px;
+    }
+
+    .container-menu li a {
+        font-size: 22px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #161616;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 5%;
+    }
+
+    .lista-produtos h3, .lista-marcas h3 {
+        font-size: 28px;
+    }
+
+    .lista-produtos p, .lista-marcas p {
+        font-size: 20px;
+    }
+
+    .lista-produtos li img {
+        margin-top: 60px;
+    }
+
+    .lista-marcas {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 5%;
+    }
+
+    .section-descricao {
+        padding-bottom: 20px;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .sobre-container {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
